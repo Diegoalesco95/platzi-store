@@ -17,7 +17,7 @@ script:
 notification:
   email:
     recipients:
-      - $DEV_EMAIL
+      - $Diegoalesco95@homtail.com
     on_success: always
     on_failure: always
 
