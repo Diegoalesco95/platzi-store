@@ -13,13 +13,7 @@ git:
 
 script:
   - yarn build
-
-notification:
-  email:
-    recipients:
-      - Diegoalesco95@hotmail.com
-    on_success: always
-    on_failure: always
+  - yarn build
 
 deploy:
   privider: pages
@@ -28,6 +22,6 @@ deploy:
   github-token: $GITHUB_TOKEN
   local-dir: dist/
   target-branch: gh-pages
-  commit_message: 'Deploy del proyecto'
+  commit_message: 'Deploy release ${TRAVIS_TAG}'
   on:
     branch: master
