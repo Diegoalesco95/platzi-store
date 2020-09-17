@@ -9,7 +9,7 @@ describe('<Header />', () => {
     const header = shallow(
       <ProviderMock>
         <Header />
-      </ProviderMock>
+      </ProviderMock>,
     );
     expect(header.length).toEqual(1);
   });
